@@ -2,9 +2,11 @@
 
 ## Updates
 
-When (or if) article 50 is invoked, a timely pull request to change the 'no' to a 'yes' would be especially helpful.
+When (or if) article 50 is invoked, a timely [update to the index file](https://github.com/rooreynolds/hasarticle50beeninvoked/edit/master/index.html) changing the 'no' to a 'yes' would be especially helpful.
 
-Please include a link to some evidence that article 50 has indeed been invoked.
+Please include a link to some evidence that article 50 has indeed been invoked in the description field when making your change.
+
+Thank you.
 
 ## Known problems 
 

@@ -5,7 +5,7 @@ A simple site that answers an important question: has [article 50 of the Treaty 
 The site is served online using [GitHub pages](https://help.github.com/articles/what-is-github-pages/) (ie using the [gh-pages branch](https://github.com/rooreynolds/hasarticle50beeninvoked/tree/gh-pages)) via a custom domain, [hasarticle50beeninvoked.uk](http://hasarticle50beeninvoked.uk/).
 
 
-## Conributions and known issues
+## Updates and contributions
 
 See [the contribution guidelines](CONTRIBUTING.md)
 

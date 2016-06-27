@@ -19,26 +19,37 @@
         margin-top: 25%;
       }
     </style>
-  </head>
-  <body>
-    
-    <h1>No</h1>
-
     <script> //Count up from any date. Script from javascriptkit.com
     var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-    function countup(yr,m,d){
-      var today=new Date()
-      var todayy=today.getYear()
-      if (todayy < 1000)
-      todayy+=1900
-      var todaym=today.getMonth()
-      var todayd=today.getDate()
+    function countup(yr,m,d,tyr,tm,td){
+      var todayy, todaym, todayd
+      if(tyr) {
+        todayy=tyr
+        todaym=tm - 1
+        todayd=td
+      } else {
+        var today=new Date()
+        todayy=today.getYear()
+        if (todayy < 1000)
+          todayy+=1900
+        todaym=today.getMonth()
+        todayd=today.getDate()
+      }
       var todaystring=montharray[todaym]+" "+todayd+", "+todayy
       var paststring=montharray[m-1]+" "+d+", "+yr
       var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
       document.write("<p>"+difference + ((difference == 1) ? " day " : " days ") + "since the EU referendum on June 23, 2016</p>")
     }
-    countup(2016,06,23)
+    </script>
+  </head>
+  <body>
+
+    <h1>No</h1>
+    <script>
+      // beware of leading zeroes, they indicate octal.
+      countup(2016,6,23)
+      // Example: They push the button after three weeks.
+      // countup(2016,6,23, 2016,7,15)
     </script>
 
     <script>

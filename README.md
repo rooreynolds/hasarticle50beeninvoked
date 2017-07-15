@@ -2,8 +2,7 @@
 
 A simple site that answers an important question: has [article 50 of the Treaty on European Union](http://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7551) been invoked? 
 
-The site is served online using [GitHub pages](https://help.github.com/articles/what-is-github-pages/) (ie using the [gh-pages branch](https://github.com/rooreynolds/hasarticle50beeninvoked/tree/gh-pages)) via a custom domain, [hasarticle50beeninvoked.uk](http://hasarticle50beeninvoked.uk/).
-
+The site is served online as https://rooreynolds.github.io/hasarticle50beeninvoked using [GitHub pages](https://help.github.com/articles/what-is-github-pages/) (ie using the [gh-pages branch](https://github.com/rooreynolds/hasarticle50beeninvoked/tree/gh-pages)).
 
 ## Updates and contributions
 

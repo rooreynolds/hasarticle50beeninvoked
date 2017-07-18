@@ -19,26 +19,22 @@
         margin-top: 25%;
       }
     </style>
-    <script> //Count up from any date. Script from javascriptkit.com
+    <script> //Count down to any date. Script from javascriptkit.com
     var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-    function countup(yr,m,d,tyr,tm,td){
+    function countdown(yr,m,d){
       var todayy, todaym, todayd
-      if(tyr) {
-        todayy=tyr
-        todaym=tm - 1
-        todayd=td
-      } else {
-        var today=new Date()
-        todayy=today.getYear()
-        if (todayy < 1000)
-          todayy+=1900
-        todaym=today.getMonth()
-        todayd=today.getDate()
-      }
-//      var todaystring=montharray[todaym]+" "+todayd+", "+todayy
-//      var paststring=montharray[m-1]+" "+d+", "+yr
-//      var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
-//      document.write("<p>"+difference + ((difference == 1) ? " day " : " days ") + "since the EU referendum on June 23, 2016</p>")
+      var today=new Date()
+      todayy=today.getYear()
+      if (todayy < 1000)
+        todayy+=1900
+      todaym=today.getMonth()
+      todayd=today.getDate()
+      var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+      var futurestring=montharray[m-1]+" "+d+", "+yr
+      var difference=(Math.round((Date.parse(futurestring)-Date.parse(todaystring))/(24*60*60*1000))*1)
+      if (difference < 0)
+        difference=0
+      document.write("<p>"+difference + ((difference == 1) ? " day " : " days ") + "until the UK leaves the EU on " + futurestring + "</p>")
     }
     </script>
   </head>
@@ -47,9 +43,7 @@
     <h1>Yes</h1>
     <script>
       // beware of leading zeroes, they indicate octal.
-//      countup(2016,6,23)
-      // Example: They push the button after three weeks.
-      // countup(2016,6,23, 2016,7,15)
+      countdown(2019,3,29)
     </script>
 
     <script>
